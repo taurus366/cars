@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* SHARE WITH OTHER PAGES !______________________________________________ */
 html {
     padding: 0;
     margin: 0;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -126,16 +129,54 @@ body {
 
 
 @media (min-width: 980px) and (max-width: 1458px) {
-
+    .header-nav-ul.index > li {
+        font-size: 22px;
+       
+    }
 }
 
 
 @media (min-width: 700px) and (max-width: 979px) {
+    /* .header-nav-ul.index {
+        display: block;
+    } */
 
+   .header-nav-ul.index > li {
+        font-size: 16px;
+       
+    }
 }
 
-@media (min-width: 360px) and (max-width: 699px) {
+@media (min-width: 500px) and (max-width: 699px) {
+    /* .header-nav-ul.index {
+        display: block;
+    } */
+   
+   .header-nav-ul.index > li {
+        font-size: 10px;
+      
+        font-weight: 700;    
+    }
 
+    .article-car-image {
+        width: 80px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 499px) {
+    /* .header-nav-ul.index {
+        display: block;
+    } */
+   
+   .header-nav-ul.index > li {
+        font-size: 10px;
+      
+        font-weight: 900;    
+    }
+
+    .article-car-image {
+        width: 70px;
+    }
 }
 
 /* MEDIA QUERIES*/
