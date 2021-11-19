@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Register</title>
+</head>
+<body>
+<header>
+
+    <section class="header-section">
+
+        <article class="article-car">
+            <a href="#">
+                <img class="article-car-image"
+                     src="./pictures/2021_mercedes_benz_s_class_angularfront-removebg-preview.png" alt="picturte">
+            </a>
+        </article>
+
+        <nav class="header-nav">
+            <ul class="header-nav-ul index">
+                <li>
+                    <a class="drop-btn index" href="#"><i class="fas fa-angle-down"></i> Admin </a>
+                    <ul class="dropdown-menu" style="display: none;">
+                        <li><a href="#home" class="a-btn">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="btn-link index"><i class="fas fa-bullhorn"></i> Create Offer</a></li>
+                <li><a href="#" class="btn-link index"><i class="fas fa-car-alt"></i> All Cars</a></li>
+                <li><a href="#" class="btn-link index"><i class="fas fa-id-card"></i> Register</a></li>
+                <li><a href="#" class="btn-link index"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</header>
+<main>
+    <div class="register-container">
+
+
+        <form class="register-form" action="#" method="post">
+
+            <h1 class="register-form-title">REGISTER FORM</h1>
+
+            <section class="register-form-row">
+                <article class="register-form-row-column">
+                    <label for="firstName">First Name</label>
+                    <br>
+                    <input type="text" name="firstName" id="firstName">
+                </article>
+
+                <article class="register-form-row-column">
+                    <label for="lastName">Last Name</label>
+                    <br>
+                    <input type="text" name="lastName" id="lastName">
+                </article>
+            </section>
+
+            <section class="register-form-row">
+                <article class="register-form-row-column">
+                    <label for="location">Location</label>
+                    <br>
+                    <input type="text" name="location" id="location">
+                </article>
+
+                <article class="register-form-row-column">
+                    <label for="area">Area</label>
+                    <br>
+                    <input type="text" name="area" id="area">
+                </article>
+            </section>
+
+            <section class="register-form-row">
+                <article class="register-form-row-column">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" name="email" id="email">
+                </article>
+
+                <article class="register-form-row-column">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="text" name="phone" id="phone">
+                </article>
+            </section>
+
+            <section class="register-form-row">
+                <article class="register-form-row-column">
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password" id="password">
+                </article>
+
+                <article class="register-form-row-column">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <br>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                </article>
+            </section>
+            <input type="submit" value="Register" class="submit-btn">
+        </form>
+    </div>
+
+</main>
+
+<footer></footer>
+</body>
+</html>
