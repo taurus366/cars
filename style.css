@@ -3,6 +3,9 @@
 @import url('./login.css');
 @import url('./create-offer.css');
 @import url('./vehicles-catalog.css');
+@import url('./vehicle-info.css');
+
+
 .btn {
     border-radius: 20%;
     background-color: rgb(128, 127, 127);
