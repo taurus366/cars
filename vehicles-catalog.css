@@ -1,0 +1,51 @@
+.catalog-container {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    max-width: 99%;
+    margin: 6% auto auto auto;
+    /*border: solid 1px rgba(59, 59, 59, 0.64);*/
+    /*background-color: rgba(59, 59, 59, 0.64);*/
+    /*padding-bottom: 2%;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vehicle-catalog-card {
+    max-width: 48%;
+}
+
+.vehicle-card-pic {
+    max-width: 50%;
+}
+
+.vehicle-card-pic > img {
+    max-width: 100%;
+}
+
+.vehicle-card-information {
+    color: red;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.vehicle-catalog-card {
+    border: green 2px solid;
+    margin: 5px;
+}
+
+.vehicle-used > h3, .vehicle-used > h4 {
+    margin: 1px 1px 0 4px;
+    /*width: 50%;*/
+}
+
+.vehicle-used {
+    /*margin: 0 0 0 5px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.vehicle-card-pic {
+    /*display: inline;*/
+    float: left;
+}
