@@ -1,9 +1,20 @@
-let dropBtn = document.querySelector('.drop-btn.index');
+let dropBtnAdmin = document.querySelector('.drop-btn.admin');
 let activeBtns = document.querySelectorAll('.btn-link');
+let dropBtnUser = document.querySelector('.drop-btn.user');
 
-dropBtn.addEventListener('click', () => {
-    let ul = document.querySelector('.dropdown-menu');
+dropBtnUser.addEventListener('click', () => {
+    let ul = document.querySelector('.dropdown-menu.user');
+    console.log(ul)
+    if (ul.style.display === "block") {
+        ul.style.display = 'none';
+    } else {
+        ul.style.display = "block";
+    }
+});
 
+dropBtnAdmin.addEventListener('click', () => {
+    let ul = document.querySelector('.dropdown-menu.admin');
+    console.log(ul)
     if (ul.style.display === "block") {
         ul.style.display = 'none';
     } else {

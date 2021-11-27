@@ -6,8 +6,8 @@
     padding-bottom: 2%;
 }
 
-p,
-label {
+.register-form-row p,
+.register-form-row label {
     font-weight: 500;
     font-size: 18px;
     color: antiquewhite;

@@ -55,6 +55,10 @@ px
     flex-direction: column;
 }
 
+.column label {
+    color: white;
+}
+
 .extras-ul > li {
     display: flex;
     justify-content: space-around;

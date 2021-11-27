@@ -44,7 +44,9 @@
     <main>
         <div class="create-offer-container">
 
-            <form action="#" method="post">
+            <form action="#" method="post" 
+            th:method="post"
+            enctype="multipart/form-data">
 
                 <section class="create-offer-form-section row vehicle-category">
                     <article class="create-offer-form-section-article column">
@@ -264,7 +266,15 @@
                 </section>
 
                 <section class="create-offer-form-section-article row">
-
+                    <article class="create-offer-form-section-article column">
+                        <label for="">Upload picture</label>
+                        <br>
+                        <input name="picture" type="file">
+                        <input name="picture" type="file">
+                        <br>
+                        <input name="picture" type="file">
+                        <input name="picture" type="file">
+                        </article>
                     <!-- <article class="create-offer-form-section-article column"></article> -->
                 </section>
 

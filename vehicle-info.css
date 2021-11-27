@@ -69,6 +69,7 @@
 .vehicle-info-information-section > article {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .vehicle-info-admin {
@@ -109,4 +110,19 @@
 
 .user-self-ad-delete {
     margin-top: 10px;
+}
+
+.views {
+    position: relative;
+    bottom: -3%;
+    left: 64%;
+    width: 50%;
+}
+
+.views-label {
+    font-size: 20px;
+}
+.views-number {
+    color: #f1f1f1;
+    font-size: 25px;
 }

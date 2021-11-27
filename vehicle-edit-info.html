@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="pictures/Itzikgur-My-Seven-Travel-BMV.ico"
+      type="image/x-icon"
+    />
+    <title>Vehicle edit</title>
+  </head>
+  <body>
+    <header>
+      <section class="header-section">
+        <article class="article-car">
+          <a href="#">
+            <img
+              class="article-car-image"
+              src="./pictures/2021_mercedes_benz_s_class_angularfront-removebg-preview.png"
+              alt="picturte"
+            />
+          </a>
+        </article>
+        <nav class="header-nav">
+          <ul class="header-nav-ul index">
+            <li>
+              <a class="drop-btn index" href="#"
+                ><i class="fas fa-angle-down"></i> Admin
+              </a>
+              <ul class="dropdown-menu" style="display: none">
+                <li><a href="#home" class="a-btn">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="btn-link index"
+                ><i class="fas fa-bullhorn"></i> Create Offer</a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn-link index"
+                ><i class="fas fa-car-alt"></i> All Cars</a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn-link index"
+                ><i class="fas fa-id-card"></i> Register</a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn-link index"
+                ><i class="fas fa-sign-in-alt"></i> Login</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <div class="vehicle-edit-container">
+        <section class="vehicle-edit-container-section">
+          <form class="edit-form" action="#" method="post">
+
+
+          <section class="text">
+            <section class="brand-section edit">
+                <label for="">Brand</label>
+                <br>
+                <select name="vehicleBrand" id="vehicleBrand">
+                    <option value="Choose Vehicle Brand">---</option>
+                    <option value="">BMW</option>
+                    <option value="">Mercedes-Benz</option>
+                </select>
+            </section>
+            <section class="model-section edit">
+                <label for="">Model</label>
+                <br>
+                <select name="vehicleModel" id="vehicleModel">
+                    <option value="">---</option>
+                    <option value="">TOYOTA -> *Yaris*</option>
+                </select>
+            </section>
+
+            <section class="modification-section edit">
+              <label for="">Modification</label>
+              <br>
+              <input type="text" name="modification" id="modification" placeholder="1.6 dCI, 2.2 TDI...">
+            </section>
+
+            <section class="fuelType-section edit">
+                <label for="fuelType">Fuel type</label>
+                <br>
+                <select name="fuelType" id="fuelType">
+                    <option value="">---</option>
+                    <option value="">BENZIN</option>
+                    <option value="">DIESEL</option>
+                    <option value="">GAS/BENZIN</option>
+                    <option value="">GAS</option>
+                    <option value="">METAN/BENZIN</option>
+                    <option value="">METAN</option>
+                    <option value="">HYBRID</option>
+                </select>
+            </section>
+
+            <section class="power-section edit">
+                <label for="">Power[hp]</label>
+                <br>
+                <input type="number" name="power" id="power">
+            </section>
+            <section class="transsmission-section edit">
+                <label for="">Transsmission</label>
+                <br>
+                <select name="transmission" id="transmission">
+                    <option value="">---</option>
+                    <option value="">AUTOMATIC</option>
+                    <option value="">MANUAL</option>
+                </select>
+            </section>
+            <section class="mileage-section edit">
+                <label for="">Mileage</label>
+                <br>
+                <input type="number" id="mileage" name="mileage" size="10">
+            </section>
+            <section class="price-section edit">
+                <label for="">Price</label>
+                <br>
+                <input type="number" id="price" name="price">
+                <select name="priceType" id="priceType">
+                <!-- <option value="">Choose Price Type</option> -->
+                <option value="">BGN</option>
+                <option value="">EUR</option>
+                <option value="">USD</option>
+            </select>
+            </section>
+
+            
+            <section class="status-section edit">
+                <label for="">Status</label>
+                <br>
+                <select class="vehicle-Status" name="vehicleStatus" id="vehicleStatus">
+                    <option value="chooseStatusCar">---</option>
+                    <option value="goodCondition">In good condition</option>
+                    <option value="damagedHit">Damaged / Hit</option>
+                    <option value="forParts">Whole car for parts</option>
+                </select>
+            </section>
+            <section class="year-section edit">
+                <label for="">Year</label>
+                <br>
+                <select name="year" id="year">
+                    <option value="">---</option>
+                    <option value="">1994</option>
+                </select>
+            </section>
+            <section class="doorCount-section edit">
+                <label for="numberOfDoors">Door count</label>
+                <br>
+                <select name="numberOfDoors" id="numberOfDoors">
+                    <option value="">---</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </section>
+            <section class="exteriorColor-section edit">
+                <label for="">Exterior color</label>
+                <br>
+                <select name="exteriorColor" id="exteriorColor">
+                    <option value="">---</option>
+                    <option value="">BLUE</option>
+                    <option value="">RED</option>
+                    <option value="">BLACK</option>
+                </select>
+            </section>
+            <section class="emissionClass-section edit">
+                <label for="">Emission class</label>
+                <br>
+                <select name="numberOfDoors" id="numberOfDoors">
+                    <option value="">---</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </section>
+            <section class="button-confirm-section">
+                <input class="button-confirm-section-input btn" type="submit" value="Save changes">
+            </section>
+          </section>
+
+         
+
+            <section class="edit-form-image buttons">
+                <img src="./pictures/cardImagesTest/car.jpg" alt="" srcset="">
+
+                <section class="img-btns change-pictures-btn">
+                   
+                        <article>
+                          <a class="change-pictures-btn-a active" href="#">Picture1</a>
+                          <a href="#2" class="delete-picture-btn-a">delete</a>
+                        </article>
+                        <article>
+                          <a class="change-pictures-btn-a" href="#">Picture2</a>
+                          <a href="#2" class="delete-picture-btn-a">delete</a>
+                        </article>
+                        <article>
+                          <a class="change-pictures-btn-a" href="#">Picture3</a>
+                          <a href="#2" class="delete-picture-btn-a">delete</a>
+                        </article>
+                        <article>
+                          <a class="change-pictures-btn-a" href="#">Picture4</a>
+                          <a href="#2" class="delete-picture-btn-a">delete</a>
+                        </article>
+                        
+                </section>
+
+               <section class="upload-picture">
+                <h1>Upload picture</h1>
+                <form
+                th:method="post"
+                enctype="multipart/form-data">
+                    <input name="picture" type="file"><br>
+                    <input type="submit" value="Upload">
+                </form>
+               </section>
+            </section>
+
+           
+          </form>
+
+
+        </section>
+      </div>
+    </main>
+
+    <script src="./index-app.js"></script>
+    <script src="./vehicle-info.js"></script>
+  </body>
+</html>
